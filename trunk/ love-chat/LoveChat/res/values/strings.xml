@@ -3,7 +3,8 @@
 
     <string name="app_name">LoveChat</string>
     <string name="action_settings">Settings</string>
-    <string name="input_chatting">Nhập nội dung</string>
-    <string  name= "btnSend">Send</string>
+    <string name="btnSend">Send</string>
+    <string name="title_activity_love_chat">LoveChat</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>
