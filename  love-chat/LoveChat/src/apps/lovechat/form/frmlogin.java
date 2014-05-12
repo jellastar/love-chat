@@ -1,5 +1,6 @@
 package apps.lovechat.form;
 
+import demo.example.lovechat.R;
 import demo.example.lovechat.R.id;
 import demo.example.lovechat.R.layout;
 import android.annotation.SuppressLint;
@@ -15,7 +16,7 @@ import apps.lovechat.base.IChangeFormListener;
 import apps.lovechat.config.eForm;
 
 
-public class frmlogin extends android.support.v4.app.Fragment
+public class frmlogin extends Fragment
 {
 	private IChangeFormListener changeFormListener;
 
@@ -23,8 +24,8 @@ public class frmlogin extends android.support.v4.app.Fragment
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState)
 	{
-		View rootView=inflater.inflate(layout.frmlogin, container);
-		Button btnNext=(Button)rootView.findViewById(id.btnNext);
+		View rootView=inflater.inflate(R.layout.frmlogin, container,false);
+		Button btnNext=(Button)rootView.findViewById(R.id.btnNext);
 		
 		btnNext.setOnClickListener(new OnClickListener()
 		{

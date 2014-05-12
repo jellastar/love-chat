@@ -1,12 +1,9 @@
 package sunflower.apps.lovechat;
 
 import demo.example.lovechat.R;
-import android.os.Bundle;
-import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.Fragment;
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
+import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.Menu;
 import apps.lovechat.base.IChangeFormListener;
@@ -15,37 +12,30 @@ import apps.lovechat.form.frmlogin;
 import apps.lovechat.form.frmmain;
 
 
-public class LoveChatActivity extends FragmentActivity implements IChangeFormListener
+public class LoveChatActivity extends Activity implements IChangeFormListener
 {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_love_chat);
+		setContentView(R.layout.activity_love_chat);	
 		
-		if (findViewById(R.id.fragment_container) != null) {
-			
-			android.support.v4.app.Fragment fragment = getView(eForm.LOGIN);            
-
-            // In case this activity was started with special instructions from an Intent,
-            // pass the Intent's extras to the fragment as arguments
-           
-
-            // Add the fragment to the 'fragment_container' FrameLayout
-			getSupportFragmentManager().beginTransaction()
-                    .add(R.id.fragment_container, fragment).commit();
-        }	
+		if(savedInstanceState==null)
+		{
+			ChangeView(eForm.MAINFORM);
+		}		
+		
 	}
 	
 	private void ChangeView(eForm form)
 	{
 		// update the main content by replacing fragments
-		android.support.v4.app.Fragment fragment = getView(form);
+		Fragment fragment = getView(form);
 		if(fragment!=null)
 		{			
-			getSupportFragmentManager().beginTransaction()			
-            .replace(R.id.fragment_container, fragment).commit();		
+			getFragmentManager().beginTransaction()			
+            .replace(R.id.content_frame, fragment).commit();		
 		}		
 	}
 
@@ -56,9 +46,9 @@ public class LoveChatActivity extends FragmentActivity implements IChangeFormLis
 		getMenuInflater().inflate(R.menu.love_chat, menu);
 		return true;
 	}
-	private android.support.v4.app.Fragment getView(eForm form)
+	private Fragment getView(eForm form)
 	{
-		android.support.v4.app.Fragment result=null;
+		Fragment result=null;
 		switch(form)
 		{
 		case LOGIN:
