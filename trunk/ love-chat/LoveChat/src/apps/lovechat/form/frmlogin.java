@@ -1,9 +1,6 @@
 package apps.lovechat.form;
 
 import demo.example.lovechat.R;
-import demo.example.lovechat.R.id;
-import demo.example.lovechat.R.layout;
-import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.Fragment;
 import android.os.Bundle;
