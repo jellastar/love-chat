@@ -7,9 +7,10 @@
     <string name="title_activity_love_chat">LoveChat</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_main">MainActivity</string>
-    <string name="title_section1">Section 1</string>
-    <string name="title_section2">Section 2</string>
-    <string name="title_section3">Section 3</string>
+    <string name="title_section1">Meet</string>
+    <string name="title_section2">Chat</string>
+    <string name="title_section3">Profile</string>
+     <string name="title_section4">Setting</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="app_id">718132761560735</string>
 
