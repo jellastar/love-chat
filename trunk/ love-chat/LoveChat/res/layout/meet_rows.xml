@@ -8,39 +8,42 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal" >
+
         <ImageView
-        android:id="@+id/ImageView1"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:background="#000"
-        android:src="@android:drawable/alert_dark_frame" />
+            android:id="@+id/imgAva"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ava_messi" />
+
         <FrameLayout
-            android:layout_marginLeft="5dp"
             android:layout_width="match_parent"
-            android:layout_height="50dp">
-            <TextView
-                android:id="@+id/tvUserName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="15sp"
-                android:text="moitap_choicainay" />
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp" >
 
             <TextView
-                android:id="@+id/tvLike"
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Leo Messi"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtSothich"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
-                android:textSize="12sp"
-                android:text="Sở thích: ăn quà vặt" />
+                android:text="Sở thích: Đá bóng"
+                android:textSize="15sp" />
         </FrameLayout>
     </LinearLayout>
 
     <TextView
-        android:id="@+id/tvTime"
+        android:id="@+id/txtTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="left"
         android:layout_gravity="right"
+        android:gravity="left"
         android:text="28/05/2014" />
 
 </FrameLayout>
