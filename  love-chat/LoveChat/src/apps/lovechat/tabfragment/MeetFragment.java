@@ -18,24 +18,21 @@ public class MeetFragment extends Fragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		View rootView = inflater.inflate(R.layout.fragment_meet, container,	false);		
-		doCreateFakeData();
-		ListView listLegend = (ListView) rootView.findViewById(R.id.lvMeet);
 		
-		//Lỗi
-//		PlayerAdapter adapter = new PlayerAdapter(this , R.layout.meet_rows, mLstPlayer );
-//		listLegend.setAdapter(adapter);
+		View rootView = inflater.inflate(R.layout.fragment_meet, container,	false);	
 		
-		return rootView;
-	}
-
-	private void doCreateFakeData() {
-		// Nguoi ban thu 1
 		Player p1 = new Player();
 		p1.setName("Leo Messi");
-		p1.setSothich("Đá bóng");
+		p1.setSothich("Đa bong");
 		p1.setAvata(R.drawable.ava_messi);
 		p1.setDatetime("10/10/2014");
-
-	}
+		mLstPlayer.add(p1);		
+	
+		ListView listLegend = (ListView) rootView.findViewById(R.id.lvMeet);		
+		PlayerAdapter adapter = new PlayerAdapter(rootView.getContext(),R.layout.meet_rows, mLstPlayer);
+		listLegend.setAdapter(adapter);
+		return rootView;
+	}	
+	
+	
 }

@@ -265,10 +265,9 @@ containing a value of this type.
         public static final int com_facebook_usersettingsfragment_profile_name=0x7f04001f;
         public static final int content_frame=0x7f040005;
         public static final int drawer_layout=0x7f040004;
-        public static final int editSearch=0x7f040023;
+        public static final int imageButton1=0x7f040024;
         public static final int imgAva=0x7f040029;
         public static final int imgCheck=0x7f040022;
-        public static final int imgSearch=0x7f040024;
         public static final int large=0x7f040002;
         public static final int login_button=0x7f040003;
         public static final int lvMeet=0x7f040025;
@@ -276,6 +275,7 @@ containing a value of this type.
         public static final int pager=0x7f040006;
         public static final int picker_subtitle=0x7f040016;
         public static final int small=0x7f040000;
+        public static final int textView1=0x7f040023;
         public static final int txtName=0x7f04002a;
         public static final int txtSothich=0x7f04002b;
         public static final int txtTime=0x7f04002c;

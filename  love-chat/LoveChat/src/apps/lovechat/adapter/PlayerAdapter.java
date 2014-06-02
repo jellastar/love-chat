@@ -48,20 +48,17 @@ public class PlayerAdapter extends ArrayAdapter<Player> {
 			viewHolder.txtSothich = (TextView) rowView.findViewById(R.id.txtSothich);
 			viewHolder.imgAva = (ImageView) rowView.findViewById(R.id.imgAva);
 			viewHolder.txtTime = (TextView) rowView.findViewById(R.id.txtTime);
-
 			rowView.setTag(viewHolder);
 
 		} else {
 			viewHolder = (ViewHolder) convertView.getTag();
 		}
-
 		Player player = mListPlayer.get(position);
-
 		viewHolder.txtName.setText(player.getName());
 		viewHolder.txtSothich.setText(player.getSothich());
 		viewHolder.imgAva.setImageResource(player.getAvata());
 		viewHolder.txtTime.setText(player.getDatetime());
-
+		
 		return rowView;
 	}
 
