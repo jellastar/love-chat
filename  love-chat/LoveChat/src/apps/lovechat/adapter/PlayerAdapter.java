@@ -45,8 +45,7 @@ public class PlayerAdapter extends ArrayAdapter<Player> {
 
 			viewHolder = new ViewHolder();
 			viewHolder.txtName = (TextView) rowView.findViewById(R.id.txtName);
-			viewHolder.txtSothich = (TextView) rowView
-					.findViewById(R.id.txtSothich);
+			viewHolder.txtSothich = (TextView) rowView.findViewById(R.id.txtSothich);
 			viewHolder.imgAva = (ImageView) rowView.findViewById(R.id.imgAva);
 			viewHolder.txtTime = (TextView) rowView.findViewById(R.id.txtTime);
 
