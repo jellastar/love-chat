@@ -22,9 +22,9 @@ public class MeetFragment extends Fragment {
 		doCreateFakeData();
 		ListView listLegend = (ListView) rootView.findViewById(R.id.lvMeet);
 		
-		 //Lỗi
-//		PlayerAdapter adapter = new PlayerAdapter(this , R.layout.meet_rows, mLstPlayer );
-//		listLegend.setAdapter(adapter);
+		//Lỗi
+		PlayerAdapter adapter = new PlayerAdapter(this.getActivity() , R.layout.meet_rows, mLstPlayer );
+		listLegend.setAdapter(adapter);
 		
 		return rootView;
 	}

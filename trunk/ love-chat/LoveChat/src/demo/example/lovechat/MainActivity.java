@@ -61,7 +61,7 @@ public class MainActivity extends Activity implements TabListener {
 	public void onTabReselected(Tab tab, FragmentTransaction ft) {
 	}
 
-	// Và chuyển Fragment khi bấm vào Tab
+	// Chuyển Fragment khi bấm vào Tab
 	@Override
 	public void onTabSelected(Tab tab, FragmentTransaction ft) {
 		viewPager.setCurrentItem(tab.getPosition());
