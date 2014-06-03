@@ -49,6 +49,7 @@ public class MainActivity extends Activity implements TabListener {
 			public void onPageScrollStateChanged(int arg0) {
 			}
 		});
+		
 	}
 
 	@Override
