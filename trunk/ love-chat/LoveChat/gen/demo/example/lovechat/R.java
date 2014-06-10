@@ -237,6 +237,7 @@ containing a value of this type.
         public static final int LinearLayout1=0x7f040021;
         public static final int action_settings=0x7f04002d;
         public static final int btnBack=0x7f040027;
+        public static final int btnLogin=0x7f040003;
         public static final int btnNext=0x7f040026;
         public static final int com_facebook_body_frame=0x7f040019;
         public static final int com_facebook_button_xout=0x7f04001b;
@@ -269,7 +270,6 @@ containing a value of this type.
         public static final int imgAva=0x7f040029;
         public static final int imgCheck=0x7f040022;
         public static final int large=0x7f040002;
-        public static final int login_button=0x7f040003;
         public static final int lvMeet=0x7f040025;
         public static final int normal=0x7f040001;
         public static final int pager=0x7f040006;

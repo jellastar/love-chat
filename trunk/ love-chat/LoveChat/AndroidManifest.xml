@@ -7,14 +7,14 @@
     <uses-sdk
         android:minSdkVersion="11"
         android:targetSdkVersion="15" />
-<!--  android:name="demo.example.lovechat.LoginActivity" -->
+<!--   demo.example.lovechat.MainActivity  android:name="demo.example.lovechat.LoginActivity"-->
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="demo.example.lovechat.MainActivity"
+            android:name="demo.example.lovechat.LoginActivity"
             android:label="@string/title_activity_login">        
             
             <intent-filter>
